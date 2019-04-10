@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:today_in_history/repository.dart';
 import 'package:today_in_history/today.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key key}) : super(key: key);
@@ -50,6 +51,7 @@ class _HomePageState extends State<HomePage> {
       length: 3,
       child: Scaffold(
         appBar: AppBar(
+          leading: Icon(FontAwesomeIcons.university),
           title: Text("History In " +
               _chosenDate.month.toString() +
               "/" +
